@@ -1,0 +1,80 @@
+Versión Final de las Prácticas con Mejoras
+1. Ejercicio HTML: Crea una página básica
+Objetivo:
+Aprender a crear una estructura básica de una página web utilizando etiquetas HTML esenciales. Este ejercicio te ayudará a entender cómo organizar el contenido en una página web.
+
+Instrucciones:
+
+Estructura Básica del Documento:
+Crea un archivo HTML con la estructura básica necesaria para cualquier página web. Asegúrate de incluir lo siguiente:
+
+Declara el tipo de documento usando <!DOCTYPE html>.
+Incluye la etiqueta <html> con el atributo lang="es" para indicar que el idioma principal de la página es español.
+Dentro de <html>, agrega una sección <head> que contenga:
+<meta charset="UTF-8"> para definir la codificación de caracteres.
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> para asegurar que la página sea responsive en dispositivos móviles.
+Un título <title> para tu página (por ejemplo, "Mi Página Web").
+Agrega una sección <body> donde irá todo el contenido visible de la página.
+Encabezado de la Página:
+En la sección <body>, crea un encabezado <header> que contenga:
+
+Un título principal <h1> con el texto "Bienvenidos a Mi Página Web".
+Un párrafo <p> explicativo con el texto "Esta es una página de ejemplo para el ejercicio".
+Secciones Principales:
+Agrega dos secciones principales a tu página:
+
+Una sección principal <main> con:
+Un subtítulo <h2> con el texto "Acerca de Nosotros".
+Un párrafo <p> descriptivo (por ejemplo, "Somos una empresa dedicada a ofrecer soluciones web").
+Otra sección <section> con:
+Un subtítulo <h2> con el texto "Nuestros Servicios".
+Una lista ordenada <ol> con tres elementos <li> que describan los servicios que ofrece tu empresa. Usa letras del alfabeto como viñetas para enumerar los servicios.
+Un enlace <a> con el texto "Ver más servicios" que redirija a https://www.ejemplo.com. Asegúrate de que el enlace se abra en una nueva pestaña o ventana del navegador.
+Pie de Página:
+Crea un pie de página <footer> que contenga:
+
+Dos enlaces <a>:
+Uno para enviar correos electrónicos con el texto "Enviar correo electrónico". Utiliza el atributo href="mailto:info@miempresa.com".
+Otro para realizar llamadas telefónicas con el texto "Llamar por teléfono". Utiliza el atributo href="tel:+1234567890".
+El carácter especial "©" seguido del nombre de tu empresa y el texto "Todos los derechos reservados". Puedes usar el código hexadecimal &copy; o decimal &#169; para insertar el símbolo de copyright.
+2. Ejercicio HTML: Crea un formulario de registro
+Objetivo:
+Aprender a crear un formulario funcional y accesible que recoja información básica de los usuarios. Este ejercicio te enseñará a utilizar diferentes tipos de campos de entrada y mejorar la experiencia del usuario.
+
+Instrucciones:
+
+Estructura del Formulario:
+Crea un formulario <form> que contenga los siguientes grupos de campos organizados con etiquetas <fieldset> y <legend> para mejorar la accesibilidad y claridad.
+
+Información Personal:
+Dentro de un <fieldset> con una <legend> que diga "Información Personal", agrega:
+
+Un campo de texto para el nombre (<input type="text">) marcado como requerido.
+Un campo de texto para el apellido (<input type="text">) marcado como requerido.
+Un campo de fecha para la fecha de nacimiento (<input type="date">) marcado como requerido.
+Un grupo de botones de radio (<input type="radio">) para seleccionar el género (opciones: Masculino, Femenino, Otro) marcado como requerido.
+Información de Contacto:
+Dentro de otro <fieldset> con una <legend> que diga "Información de Contacto", agrega:
+
+Un campo de correo electrónico (<input type="email">) marcado como requerido.
+Un campo de teléfono (<input type="tel">) marcado como requerido.
+Un campo de texto de varias líneas (<textarea>) para la dirección.
+Información de Cuenta:
+Dentro de otro <fieldset> con una <legend> que diga "Información de Cuenta", agrega:
+
+Un campo de texto para el nombre de usuario (<input type="text">) marcado como requerido.
+Un campo de contraseña (<input type="password">) marcado como requerido.
+Un campo de confirmación de contraseña (<input type="password">) marcado como requerido.
+Preferencias:
+Dentro de otro <fieldset> con una <legend> que diga "Preferencias", agrega:
+
+Un menú desplegable (<select>) para seleccionar un color favorito con opciones como Rojo, Azul, Verde y Amarillo.
+Un casillero de verificación (<input type="checkbox">) para aceptar términos y condiciones, marcado como requerido.
+Botón de Envío:
+Al final del formulario, agrega un botón de envío (<button type="submit">) con el texto "Enviar".
+
+Consejos Adicionales:
+
+Asegúrate de que cada etiqueta <label> esté vinculada correctamente a su campo de entrada correspondiente mediante los atributos for e id. Esto mejora la accesibilidad para usuarios con discapacidades.
+Recuerda que los campos marcados como "requeridos" deben ser completados antes de enviar el formulario.
+Tómate tu tiempo para entender cada etiqueta y su propósito. Esto te ayudará a construir una base sólida para futuros proyectos.

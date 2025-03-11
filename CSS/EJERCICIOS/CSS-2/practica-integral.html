@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica Integral: Portafolio Web Interactivo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Sección 1: Cabecera Dinámica -->
+    <header>
+        <h1 id="titulo">Mi Portafolio</h1>
+        <nav>
+            <ul>
+                <li><i class="fas fa-star"></i><a href="#inicio">Inicio</a></li>
+                <li><i class="fas fa-star"></i><a href="#proyectos">Proyectos</a></li>
+                <li><i class="fas fa-star"></i><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección 2: Tarjetas de Proyectos -->
+    <section id="proyectos">
+        <article class="proyecto destacado">
+            <img src="IMG/clip.png" alt="Proyecto 1">
+            <h2>Proyecto 1</h2>
+            <p>Descripción del proyecto 1.</p>
+        </article>
+        <article class="proyecto">
+            <img src="IMG/clip.png" alt="Proyecto 2">
+            <h2>Proyecto 2</h2>
+            <p>Descripción del proyecto 2.</p>
+        </article>
+        <article class="proyecto">
+            <img src="IMG/clip.png" alt="Proyecto 3">
+            <h2>Proyecto 3</h2>
+            <p>Descripción del proyecto 3.</p>
+        </article>
+        <article class="proyecto destacado">
+            <img src="IMG/clip.png" alt="Proyecto 4">
+            <h2>Proyecto 4</h2>
+            <p>Descripción del proyecto 4.</p>
+        </article>
+        <article class="proyecto">
+            <img src="IMG/clip.png" alt="Proyecto 5">
+            <h2>Proyecto 5</h2>
+            <p>Descripción del proyecto 5.</p>
+        </article>
+        <article class="proyecto">
+            <img src="IMG/clip.png" alt="Proyecto 6">
+            <h2>Proyecto 6</h2>
+            <p>Descripción del proyecto 6.</p>
+        </article>
+    </section>
+
+    <!-- Sección 3: Formulario de Contacto Responsivo -->
+    <section id="contacto">
+        <form>
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo" class="input-verde" required>
+            <textarea placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Sección 4: Footer con Efectos -->
+    <footer>
+        <div class="mensaje-secreto">Mensaje Secreto</div>
+        <p>&copy; 2025 Mi Portafolio. Todos los derechos reservados.</p>
+        <button class="boton-subir">Subir</button>
+    </footer>
+</body>
+</html>
+
+<!--
+Práctica Integral: Diseña un Portafolio Web Interactivo
+Objetivo: Crear un sitio web de 4 secciones que aplique simultáneamente múltiples conceptos de HTML/CSS, obteniendo un resultado profesional y cohesivo.
+
+🌟 Sección 1: Cabecera Dinámica
+Tareas Integradas:
+
+Crea un <header> con:
+Un título <h1 id="titulo"> centrado usando selector de ID.
+Menú horizontal usando display: inline-block (menú horizontal), con enlaces sin bullets (lista sin estilo).
+Icono de estrella de Font Awesome antes de cada ítem del menú (iconos).
+Estilos:
+Fondo RGB(30, 30, 30) para el header (RGB).
+Enlaces en blanco, cambian a morado al pasar el mouse (estados de enlaces).
+Fuente "Georgia" para el título (fuente personalizada).
+Agrega /* Estilos cabecera */ como comentario CSS.
+<header>
+  <h1 id="titulo">Mi Portafolio</h1>
+  <nav>
+    <ul>
+      <li><i class="fas fa-star"></i><a href="#inicio">Inicio</a></li>
+    --Repetir para otros enlaces--
+    </ul>
+</nav>
+</header>
+🎨 Sección 2: Tarjetas de Proyectos
+Tareas Integradas:
+
+Crea un <section> con 6 <article class="proyecto"> que incluyan:
+Imagen con margen 20px (margen externo).
+Título y párrafo (primera letra en 24px roja con ::first-letter).
+Estilos:
+Fondo amarillo para artículos con clase .destacado (selector de clase).
+Borde redondeado 10px y sombra (border-radius).
+Cada tercer artículo con fondo gris claro (:nth-child) (pseudo-clase).
+Imágenes al 50% de opacidad al hover (opacidad).
+Padding 15px y ancho fijo 300px (padding y dimensiones).
+.proyecto:hover img {
+opacity: 0.5;  /* Opacidad al hover */
+}
+.proyecto::first-letter {
+font-size: 24px;
+color: red;
+}
+📱 Sección 3: Formulario de Contacto Responsivo
+Tareas Integradas:
+
+Diseña un formulario con:
+Inputs de texto y email (borde verde para email con selector de atributo).
+Textarea con outline azul al focus (outline).
+Estilos:
+Esquinas redondeadas 5px y padding 8px (formulario estilizado).
+Usa max-width: 90% pero máximo 600px (max-width responsivo).
+Fuente en 1.2rem (unidades relativas).
+Sobreescribe un estilo con !important (especificidad).
+<form>
+<input type="email" placeholder="Correo" class="input-verde">
+-- Más inputs --
+</form>
+🖥️ Sección 4: Footer con Efectos
+Tareas Integradas:
+
+Crea un <footer> que:
+Oculte un div con mensaje secreto (display: none) (elemento oculto).
+Texto centrado verticalmente en altura 100px (centrado vertical).
+Botón flotante "Subir" posicionado fijo (posicionamiento absoluto).
+Estilos:
+Fondo con textura.jpg no repetida (fondo con imagen).
+Enlaces subrayados en rojo (text-decoration) (texto subrayado).
+🔄 Requerimientos Globales:
+Modelo de Caja: Todos los elementos usan box-sizing: border-box.
+Responsive: Media queries para móviles (opcional avanzado).
+Estructura CSS: Comentarios por sección (/* Header */, /* Proyectos */).
+Extras: Z-index en menú flotante, overlay al hacer click en proyectos.
+
+-->
